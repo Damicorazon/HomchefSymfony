@@ -11,6 +11,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class RegistrationFormType extends AbstractType
 {
@@ -22,9 +23,10 @@ class RegistrationFormType extends AbstractType
                 'mapped' => false,
                 'constraints' => [
                     new IsTrue([
-                        'message' => 'You should agree to our terms.',
+                        'message' => 'Vous devez accepter nos Conditions d\'utilisations.',
                     ]),
                 ],
+                "label" => "C.G.U"
             ])
             ->add('plainPassword', PasswordType::class, [
                 // instead of being set onto the object directly,
@@ -32,15 +34,37 @@ class RegistrationFormType extends AbstractType
                 'mapped' => false,
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Please enter a password',
+                        'message' => 'Entrez votre mot de passe',
                     ]),
                     new Length([
                         'min' => 6,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'minMessage' => 'Votre mot de passe doit avoir 6 caractères minimum',
                         // max length allowed by Symfony for security reasons
                         'max' => 4096,
                     ]),
                 ],
+                "label" => "Mot de passe"
+            ])
+            ->add('nom', TextType::class, [
+                "label" => "Nom"
+            ])
+            ->add('prenom', TextType::class, [
+                "label" => "Prénom"
+            ])
+            ->add('mail', TextType::class, [
+                "label" => "E-mail"
+            ])
+            ->add('ville', TextType::class, [
+                "label" => "Ville"
+            ])
+            ->add('cp', TextType::class, [
+                "label" => "Code Postal"
+            ])
+            ->add('adresse', TextType::class, [
+                "label" => "Adresse"
+            ])
+            ->add('telephone', TextType::class, [
+                "label" => "Telephone"
             ])
         ;
     }
