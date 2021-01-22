@@ -18,16 +18,16 @@
             {# NAV #}
 
         <header>
-            <a href="#imageAccueil">
+            <a href="{{ path("accueil") }}">
 				<img id="logoHeader" src="photos/header/logopaysageblanc.png" alt="Logo du site HomChef représentant une toque sur fond blanc">
 			</a>
             <nav>
                 <ul>
-                    <li><a id="connection">CONNEXION</a></li>';
+                    <li><a href="" id="connection">CONNEXION</a></li>';
                     <li class="deroulant"><a href="#">ASSISTANCE</a>
                         <ul class="sous">
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Téléphone</a></li>
+                        <li><a href="#preFooter">Téléphone</a></li>
                     </ul>
                     </li>
                     <li><a href="#lesSpecialites">SPECIALITES</a></li>';
@@ -229,7 +229,7 @@
                             <a href="index.php">Accueil</a><br>
                             <a id="connection2" href="#menu">Connexion</a><br>
                             <a href="recrutement.php">Recrutement</a><br>
-                            <a href="">Vous êtes chef?</a>
+                            <a href=" {{ path("app_register") }} ">Vous êtes chef?</a>
                         </div>
                     </div>
                     <div id="centreFoot3">

@@ -52,7 +52,7 @@ nav a {
   padding: 27px 20px;
   font-weight: bold;
 }
-nav a:hover{
+nav ul li a:hover{
 	background-color: #ffffff;
 	color: #000000;
 	transition: 0.5s;
@@ -1215,7 +1215,295 @@ input::placeholder {
 	color:#d1920e;
 }
 
+/*******************PAGE RESERVATION************************/
 
+.flexSansWrap{
+  display: flex;
+}
+
+.inlineBlock{
+	display: inline-block;
+}
+.absolute{
+	position: absolute;
+}
+#bodyPageReservation{
+	background: #F4F0F0;
+}
+#pageReservation{
+	background: url(../photos/pageReservation/resaPaiement.jpg);
+	background-size: cover;
+	width: 100%;
+	height:545px;
+	background-position:center;
+}
+#pageReservation h1{
+	font-size: 40px;
+	color:#ffffff;
+	text-align: center;
+	position: relative;
+	top:52%;
+}
+#container{
+  justify-content: center;
+}
+#contenuReservation{
+	display: flex;
+  width: 45%;
+  margin: -2% 0% 0% 0%;
+}
+#contenuReservation h2{
+	color:#D1920E;
+	font-size:20px;
+	text-align: center;
+	padding-top: 4%;
+}
+#contenuReservation p{
+	text-align: center;
+	padding: 5% 3%;
+}
+#mainReservation{
+	width: 100%;
+}
+#contenuMenu{
+	width: 100%;
+	background: #ffffff;
+}
+.traitReservation{
+	width: 100%;
+	color:#C6C6C6;
+}
+#profilchefReservation{
+	padding: 0% 3%;
+	background: #E5E5E5;
+}
+#photoChefReservation{
+	object-fit: contain;
+	width: 130px;
+}
+#imageEtTexte{
+	width: 40%;
+}
+#imageEtTexte p{
+  padding: 19% 3%;
+}
+#imageEtTexte a{
+  color:#000000;
+  text-decoration: underline;
+}
+.etoilesPageReservation{
+	width: 41%;
+  justify-content: flex-end;
+  margin-top: 7%;
+}
+#moyenneReservation{
+	margin-bottom: 17%;
+	font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+  text-align: end !important;
+}
+#containerAside{
+  width: 30%;
+  margin: -2% 0% 0% 2%;
+}
+#asideReservation{
+	background: #222222;
+}
+#votreReservation{
+	width: 100%;
+}
+#votreReservation h2{
+	color:#ffffff;
+	font-size: 20px;
+	text-align: initial;
+    padding: 3% 4%;
+}
+.traitAside{
+	color:#C6C6C6;
+}
+#reservationForm{
+	padding: 3% 3%;
+}
+#reservationForm label{
+	color:#ffffff;
+	font-weight: bold;
+}
+.reservationinput{
+	padding-left: 3%;
+	margin: 3% 0 3% 5%;
+	width: 85%;
+	height: 30px;
+}
+#dateinput{
+	margin: 3% 0 3% 3%;
+	width: 88%;
+	height: 30px;
+}
+#votrePanier{
+	width: 100%;
+}
+#votrePanier h2{
+	color:#ffffff;
+	font-size: 20px;
+	text-align: initial;
+    padding: 3% 4%;
+}
+.lignePanier{
+  margin: 3% 2%;
+}
+.lignePanier p{
+	color:#ffffff;
+	font-weight: bold;
+}
+.lignePanier input{
+	float: right;
+  margin: 0% 1%;
+}
+#placementPPanier, #placementPPanier1, #placementPPanier2, #placementPPanier3{
+	float:right;
+	margin-right: 3%;
+}
+#lignePanierJaune p{
+	color:#D1920E;
+}
+#modificationReservation{
+	color:#ffffff;
+	font-weight: bold;
+	text-align: center;
+  margin: 3% 2%;
+}
+#textareaReservation{
+	width: 100%;
+	height: 89px;
+	color:#989494;
+	font-family: 'Assistant', sans-serif;
+  margin: 3% 0%;
+}
+#boutonReservation{
+	background: #D1920E;
+	border:1px solid #D1920E;
+	padding:11px 14px;
+	border-radius: 10px;
+	font-size: 15px;
+	color:#ffffff;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 12%;
+}
+#boutonReservation:hover{
+	background: #000000;
+	color:#D1920E;
+}
+#moyensPaiement{
+	width: 100%;
+	margin: 10% 0%;
+}
+#optionReservation{
+	background: #F4F0F0;
+	padding: 4% 0%;
+}
+#optionReservation h3{
+	text-align: left;
+}
+#options{
+  background: #F4F0F0;
+}
+#menuEnfant, #piecesAperitives, #fromage{
+	padding: 3% 2%;
+  margin-bottom: 3%;
+  background: #ffffff;
+}
+#menuEnfant p, #piecesAperitives p, #fromage p{
+	text-align: left;
+	padding: 1% 17% 0% 0%;
+}
+#menuEnfant h2, #piecesAperitives h2, #fromage h2{
+	text-align: left;
+	padding:0;
+}
+.optionTitre{
+  width: 50%;
+}
+.optionPrix{
+    width: 50%;
+    text-align: end !important;
+    padding: 0 !important;
+}
+.boutonsOption{
+  margin-left: 6%;
+  width: 19%;
+  color: #D1920E;
+  background: #ffffff;
+  border: 2px solid #C6C6C6;
+  font-weight: bold;
+  text-align: center;
+}
+#boutonAjouter{
+  margin-left: 6%;
+  width: 19%;
+  color: #D1920E;
+  background: #ffffff;
+  border: 2px solid #C6C6C6;
+  font-weight: bold;
+  text-align: center;
+}
+#boutonAjouter:hover{
+  cursor: pointer;
+  background: #000000;
+}
+#carresReservations{
+  background: #F4F0F0;
+  margin-bottom: 4%;
+}
+#prixInclus{
+  margin-right: 2%;
+}
+#prixInclus, #garanties{
+  width: 43%;
+  background: #ffffff;
+  padding: 3%;
+}
+#prixInclus h2, #garanties h2{
+  color:#000000;
+  padding-bottom: 6%;
+}
+#prixInclus i, #garanties i{
+  color:##6AD566;
+  padding-left: 12%;
+}
+#prixInclus p, #garanties p{
+  font-family: 'Assistant', sans-serif;
+  display: inline-block;
+  padding: 4px 7px;
+  font-weight: normal;
+}
+.fa-check:before {
+  color:#6ad566;
+}
+#reservezCeChef{
+  background: #ffffff;
+  margin-top: 8%;
+  padding: 7%;
+}
+#reservezCeChef h3{
+  font-size: 14px;
+  text-align: justify;
+  margin: 7% 4%;
+}
+#reservezCeChef p{
+  text-align: justify;
+  margin: 7% 4%;
+}
+.fondGris{
+  background: #F4F0F0;
+}
+#footerReservation{
+
+}
 
 /*******************RESPONSIVE************************/
 
@@ -1628,6 +1916,61 @@ header{
 	.textJustifie{
 		text-align: justify;
 	}
+
+	/*********************PARTIE RESPONSIVE PAGE DE RESERVATION***************/
+@media  screen and (max-width: 875px) {
+  #contenuReservation{
+        width: 100%;
+  }
+  #profilchefReservation{
+    display:block;
+  }
+  #photoChefReservation{
+    display:block;
+    margin: auto;
+    padding-top: 3%;
+  }
+  #imageEtTexte{
+    margin: auto;
+  }
+  #etoileReservation{
+    justify-content: center;
+    width: 100%;
+  }
+  #moyenneReservation{
+    text-align: center !important;
+  }
+  #optionReservation h3{
+    text-align: center;
+  }
+  #menuEnfant p, #piecesAperitives p, #fromage p{
+    padding: 1% 17% 5% 0%;
+  }
+  #menuEnfant h2, #piecesAperitives h2, #fromage h2{
+    text-align: left;
+    padding:0;
+  }
+  .boutonsOption{
+    padding:4px;
+    width: 19%;
+    margin-left: 40%;
+  }
+  #boutonAjouter{
+    width: 30%;
+  }
+  #prixInclus, #garanties{
+    width: 100%;
+  }
+  #prixInclus{
+    margin-bottom: 3%;
+  }
+  #prixInclus i, #garanties i{
+    padding:0;
+  }
+  #containerAside{
+    width: 100%;
+  }
+}
 
 	/**************************** COOKIES ******************************/
 	#cookies{
